@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6", // Or "commonjs" if output is for Node environment directly
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    // For namespaces across files to be compiled together by `tsc`:
+    // Ensure all .ts files under js/ are included.
+    // Default behavior of tsc (without "files" or "include" in tsconfig)
+    // is to compile all .ts files in the current directory and subdirectories.
+    // Add declaration true if these are meant to be a library
+    "declaration": true // Useful if these are to be consumed as a library
+  },
+  "include": [
+    "js/**/*.ts" // Explicitly include all .ts files under js/
+  ]
+}
